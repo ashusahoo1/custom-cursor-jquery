@@ -1,0 +1,101 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  h2 {
+    color: #ffffff;
+   
+    font-size: 200px;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1;
+    cursor: default;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+  }
+  
+  h2:hover + .cursor {
+    transform: scale(15);
+  }
+   */
+
+
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  h2 {
+    color: #ffffff;
+    font-size: 6rem; /* Adjust font size for responsiveness */
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    cursor: pointer; /* Changed to pointer for hover interaction */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  h2:hover {
+    color: #00aee6; /* Bright color on hover */
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 10px; /* Smaller size for modern minimalism */
+    height: 10px; /* Smaller size for modern minimalism */
+    background-color: #00aee6; /* Match hover color */
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    pointer-events: none;
+    z-index: 9999; /* Ensure it's above other elements */
+    transform: scale(0); /* Hidden initially */
+  }
+  
+  h2:hover + .cursor {
+    transform: scale(15); /* Scale up on hover */
+  }
+  
